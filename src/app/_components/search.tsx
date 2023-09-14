@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
+import Link from "next/link";
 
 export function Search() {
   const [query, setQuery] = useState<string>();
@@ -21,13 +22,13 @@ export function Search() {
           className="border rounded-full px-10  py-2 w-96 focus:outline-none"
         />
         {query && (
-          <button
+          <Link
+            href={`/${query}`}
             className="absolute right-3"
-            type="button"
-            onClick={clearQuery}
+            // onClick={clearQuery}
           >
             <AiOutlineClose size={20} />
-          </button>
+          </Link>
         )}
       </div>
       <button className="w-20 bg-gray-200 p-3">Buscar</button>

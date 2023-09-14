@@ -16,13 +16,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const user: User = {
-    name: faker.person.firstName(),
-    image: faker.image.avatarGitHub(),
-  };
   return (
     <html lang="en" className="flex flex-col h-screen">
-      <Header user={user} />
       <body className="flex-1 overflow-hidden">{children}</body>
       <footer className="h-8 bg-gray-100  w-full flex flex-row justify-between">
         <p>@ Google 2021</p>
