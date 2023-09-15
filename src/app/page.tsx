@@ -12,6 +12,8 @@ export default function Home() {
     <div className=" w-full flex flex-col">
       <Header user={user} />
       <main className="flex-1  flex justify-center items-center flex-col">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+
         <img
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           alt="google logo"

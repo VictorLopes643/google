@@ -15,6 +15,7 @@ export default function SearchHeader(props: SearchHeaderProps) {
   return (
     <header className="h-12  flex gap-2 border-b-2 border-gray-300 px-4 lg:px-10 max-w-5xl:px-60">
       <Link href={"/"} className="flex p-2">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           alt="google logo"

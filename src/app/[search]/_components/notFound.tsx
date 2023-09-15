@@ -6,7 +6,7 @@ export default function NotFound({ search }: NotFoundProps) {
   return (
     <div className="p-5">
       <p>
-        No results found for "<strong>{search}</strong>"
+        No results found for <strong>&quot;{search}&quot;</strong>
       </p>
       <span>
         Try looking for:{" "}

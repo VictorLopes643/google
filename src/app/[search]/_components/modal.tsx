@@ -15,6 +15,8 @@ const Modal = ({ isOpen, onClose, animal }: ModalProps) => {
       ></div>
       <aside className="bg-white rounded-lg max-w-sm p-8 m-5 z-10">
         <div className="p-2 border border-gray-200 rounded-lg  flex flex-col gap-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+
           <img src={animal.image} alt={animal.title} />
           <span>{animal.url}</span>
           <h1 className="font-bold text-lg ">{animal.title}</h1>
