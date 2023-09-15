@@ -1,20 +1,17 @@
 import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
 import { Search } from "./_components/search";
-import fakeDatabase from "@/db/fakerDB";
 import Header from "./_components/header";
 import { faker } from "@faker-js/faker";
 export default function Home() {
-  console.log("fakeDatabase", fakeDatabase);
   const user: User = {
     name: faker.person.firstName(),
     image: faker.image.avatarGitHub(),
   };
   return (
-    <div className="h-full w-full justify-center items-center flex flex-col">
+    <div className=" h-screen flex flex-col">
       <Header user={user} />
-
-      <main className="  flex justify-center items-center flex-col">
+      <main className="flex-1  flex justify-center items-center flex-col">
         <img
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           alt="google logo"

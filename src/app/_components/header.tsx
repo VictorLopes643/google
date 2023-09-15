@@ -7,7 +7,7 @@ interface headerProps {
 
 export default function Header(props: headerProps) {
   return (
-    <head className="h-9 flex justify-between items-center my-2 px-4 border-b-2 border-gray-300">
+    <header className="h-9 flex justify-between items-center my-2 px-4 border-b-2 border-gray-300">
       <h5>
         <strong>Agile Content</strong> Frontend test
       </h5>
@@ -21,6 +21,6 @@ export default function Header(props: headerProps) {
           height={20}
         />
       </div>
-    </head>
+    </header>
   );
 }

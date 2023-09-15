@@ -1,0 +1,35 @@
+// {
+//     "typescript.tsdk": "node_modules\\typescript\\lib"
+// }
+
+{
+  "tabnine.experimentalAutoImports": true,
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "git.autofetch": true,
+  "githubPullRequests.pullBranch": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#16e813",
+    "editorBracketHighlight.foreground2": "#96e813",
+    "editorBracketHighlight.foreground3": "#9505f5",
+    "editorBracketHighlight.foreground4": "#e505f5",
+    "editorBracketHighlight.foreground5": "#f1f505",
+    "editorBracketHighlight.foreground6": "#f505f5",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555"
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
