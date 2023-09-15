@@ -5,15 +5,14 @@ const generateFakeData = () => {
   const getType = () => faker.animal.type();
   const getUrl = () => faker.internet.url();
   const getText = () => faker.lorem.sentences();
-  const getTitle = (type) => faker.animal[type]();
+  const getTitle = () => faker.lorem.lines({ max: 1, min: 1 });
 
-  const data = [...Array(300)].map((_, index) => {
-    const type = getType();
+  const data = [...Array(100)].map((_, index) => {
     return {
-      type,
+      type: getType(),
       id: index + 1,
       url: getUrl(),
-      title: getTitle(type),
+      title: getTitle(),
       description: getText(),
       image: getImage(),
     };
