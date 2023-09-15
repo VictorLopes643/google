@@ -14,11 +14,6 @@ export function Search() {
 
   console.log("handleQuery", query);
 
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
-  //   console.log("handleSearch", e);
-  //   setQuery(e.target.value);
-  // };
   console.log("fakeDatabase", fakeDatabase);
 
   return (
@@ -33,10 +28,11 @@ export function Search() {
           className="border rounded-full px-10  py-2 w-96 focus:outline-none"
         />
       </div>
-
-      <Link href={query ? query : ""} className="w-20 bg-gray-200 p-3">
-        Buscar
-      </Link>
+      <button>
+        <Link href={query ? query : ""} className="w-20 bg-gray-200 p-3">
+          Buscar
+        </Link>
+      </button>
     </form>
   );
 }

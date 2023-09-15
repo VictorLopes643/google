@@ -29,7 +29,6 @@ export default async function SearchPage({ params }: ProductPageProps) {
     (animal) =>
       animal.description.includes(search) ||
       animal.title.includes(search) ||
-      animal.type.includes(search) ||
       animal.url.includes(search)
   );
 

@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "cypress:open": "cypress open",
     "lint": "next lint"
   },
   "dependencies": {
@@ -24,6 +25,8 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2"
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.2.0",
+    "tsconfig-paths": "^4.2.0"
   }
 }
