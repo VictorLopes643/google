@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-
 import { PiDotsNineBold } from "react-icons/pi";
 import { BsSearch } from "react-icons/bs";
 import Link from "next/link";
