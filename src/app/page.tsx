@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
-import { Search } from "./_components/search";
+import { SearchButton } from "./_components/searchButton";
 import Header from "./_components/header";
 import { faker } from "@faker-js/faker";
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     image: faker.image.avatarGitHub(),
   };
   return (
-    <div className=" h-screen flex flex-col">
+    <div className=" w-full flex flex-col">
       <Header user={user} />
       <main className="flex-1  flex justify-center items-center flex-col">
         <img
@@ -18,7 +18,7 @@ export default function Home() {
           height={300}
           width={300}
         />
-        <Search />
+        <SearchButton />
       </main>
     </div>
   );
