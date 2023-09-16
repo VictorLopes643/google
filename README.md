@@ -36,7 +36,7 @@ docker run -p 3000:3000  google
 
 Now, your project will be running at http://localhost:3000.
 
-## Installation
+## Installation npm or yarn
 
 Clone this repository to your machine:
 
